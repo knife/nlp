@@ -5,11 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "nlp"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Linguistics tools for processing polish language.}
+    gem.description = %Q{Tools for natural processing language. Tokenisation, scanning, categosation...}
     gem.email = "satre@o2.pl"
     gem.homepage = "http://github.com/knife/nlp"
-    gem.authors = ["Marek"]
+    gem.authors = ["knife"]
+    gem.files = Dir["lib/*"] + Dir["lib/stdlib/ext/*"] + Dir["dict/*"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
