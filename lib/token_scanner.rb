@@ -1,6 +1,6 @@
 
 require 'rexml/document'
-
+require 'soap/rpc/driver'
 module NLP
 class TokenScanner
 include REXML
@@ -70,10 +70,15 @@ include REXML
     end
     
    def load_lemated_text(text_file)
-        t1 = Thread.new do 
-          `takipi -i #{text_file} -o output.xml -it TXT`
-        end
-        t1.join
+
+        	t1 = Thread.new do 
+          	`takipi -i #{text_file} -o output.xml -it TXT`
+        	end
+        	t1.join
+
+
+
+		
 
        text = []
        File.open("output.xml") do |f|

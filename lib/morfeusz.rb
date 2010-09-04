@@ -15,7 +15,7 @@ module NLP
 
       inline(:C) do |builder|
         builder.include '"morfeusz.h"'
-        builder.add_compile_flags '-lmorfeusz', '-I/include/'
+        builder.add_compile_flags '-lmorfeusz', '-I/home/knife/morf/include/'
         builder.c <<-END
           void initialize(){
             morfeusz_set_option(#{MORFOPT_ENCODING},#{MORFEUSZ_UTF_8});

@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "nlp"
     gem.summary = %Q{Linguistics tools for processing polish language.}
-    gem.description = %Q{Tools for natural processing language. Tokenisation, scanning, categosation...}
+    gem.description = %Q{Tools for processing polish language. Tokenization, scanning, categorization...}
     gem.email = "satre@o2.pl"
     gem.homepage = "http://github.com/knife/nlp"
     gem.authors = ["knife"]
