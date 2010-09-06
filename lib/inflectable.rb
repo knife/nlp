@@ -2,8 +2,8 @@ module Inflectable
 	
 	GRAM_CAT = { 
 		#rzeczownik
-		[:subst, :depr] => 'rzeczownik',
 		:adj => 'przymiotnik',
+                [:subst,:depr] => 'rzeczownik',
 		:adv => 'przyslowek',
 		:num => 'liczebnik',
 		[:pron,:siebie] => 'zaimek',
@@ -22,15 +22,15 @@ module Inflectable
     		:voc => 'wolacz',
 		
 		#Rodzaje
-    		:m1 => 'męski_osobowy',
-    		:m2 => 'męski_zwierzęcy',
-    		:m3 => 'męski_rzeczowy',
-    		:f => 'żeński',
-    		:n1 => 'nijaki zbiorowy',
-		:n2 => 'nijaki zwykły',
-    		:p1 => 'przymnogi osobowy',
-		:p2 => 'przymnogi zwykły',
-		:p3 => 'przymnogi opisowy',
+    		:m1 => 'meski_osobowy',
+    		:m2 => 'meski_zwierzecy',
+    		:m3 => 'meski_rzeczowy',
+    		:f => 'zenski',
+    		:n1 => 'nijaki_zbiorowy',
+		:n2 => 'nijaki zwykly',
+    		:p1 => 'przymnogi_osobowy',
+		:p2 => 'przymnogi_zwykly',
+		:p3 => 'przymnogi_opisowy',
 		
 		#Osoby	
 		:pri => "pierwsza_osoba",
@@ -44,16 +44,18 @@ module Inflectable
 	}
 
 	      GRAM_CAT.each do |key,value|
-		if key.kind_of? Array
-			key = key.first
-		else
-			define_method(value+"?"){ 
-				inflection.split(":").any?{|e| e.include? key.to_s[1..-1]}
-			}
-		end
+			
+                  define_method(value+"?"){ 
+			    inflection.split(":").any?{|e| 
+                                if key.is_a? Array
+                                    key.any?{|k| e.include? k.to_s}
+                                else 
+                                    e.include? key.to_s 
+                                end
+                            }
+		    }
 	      end
 
 
-	
 	       	
 end

@@ -1,12 +1,10 @@
 require 'dictionary'
-require 'morfeusz'
+#require 'morfeusz'
 require 'token'
 require 'word'
 require 'emoticon'
 require 'sentence'
 require "token_scanner.rb"
-require "inflectable"
-require "meaningable"
 
 $KODE = "UTF8"
 
@@ -15,7 +13,6 @@ module NLP
   class Analyzer
 
     include REXML
-   #Lexeme = Apohllo::Morfeusz::Lexeme 
     
     def initialize( category_file, restore = true )
         state_file = File.expand_path(Dictionary::CACHE_DIR)
@@ -46,7 +43,6 @@ module NLP
         unless categories.nil?
             categories.each do |category|
                 
-                puts "#{word} : #{category.name}"
                 results[:scores][category] = results[:scores][category] + 1
             end
             

@@ -1,5 +1,6 @@
+require 'meaningable'
 module NLP
-class Emoticon < Token
+    class Emoticon < Token
 	include Meaningable
 
 	def initialize(tokens,tags)
@@ -8,6 +9,6 @@ class Emoticon < Token
 	end
 
 
-end
+    end
 end
 

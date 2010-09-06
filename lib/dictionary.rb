@@ -59,7 +59,6 @@ module NLP
               @tree.insert( word, category )
             end
           rescue
-            puts "Error for line: #{line}"
             raise
           end
         end
