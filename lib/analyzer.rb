@@ -5,6 +5,7 @@ require 'word'
 require 'emoticon'
 require 'sentence'
 require "token_scanner.rb"
+require "lemmatizer"
 
 $KODE = "UTF8"
 
@@ -12,7 +13,7 @@ module NLP
 
   class Analyzer
 
-    include REXML
+   # include REXML
     
     def initialize( category_file, restore = true )
         state_file = File.expand_path(Dictionary::CACHE_DIR)

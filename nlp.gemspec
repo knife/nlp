@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{nlp}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["knife"]
-  s.date = %q{2010-09-04}
+  s.date = %q{2010-09-09}
   s.description = %q{Tools for processing polish language. Tokenization, scanning, categorization...}
   s.email = %q{satre@o2.pl}
   s.extra_rdoc_files = [
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "lib/dictionary.rb",
      "lib/emoticon.rb",
      "lib/inflectable.rb",
+     "lib/lemmatizer.rb",
      "lib/liwc_category.rb",
      "lib/meaningable.rb",
      "lib/morfeusz.rb",
@@ -32,6 +33,8 @@ Gem::Specification.new do |s|
      "lib/stdlib/ext/array.rb",
      "lib/stdlib/ext/string.rb",
      "lib/stree.rb",
+     "lib/takipi_web_service",
+     "lib/takipi_web_service.rb",
      "lib/token.rb",
      "lib/token_scanner.rb",
      "lib/word.rb"
@@ -43,7 +46,8 @@ Gem::Specification.new do |s|
   s.summary = %q{Linguistics tools for processing polish language.}
   s.test_files = [
     "test/helper.rb",
-     "test/test_nlp.rb"
+     "test/test_nlp.rb",
+     "test/word_test.rb"
   ]
 
   if s.respond_to? :specification_version then

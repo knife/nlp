@@ -1,23 +1,11 @@
 
-require 'rexml/document'
-require 'soap/rpc/driver'
-
 module NLP
     class TokenScanner
-        include REXML
         
         attr_reader :text, :tokens
 
-        def initialize(text, method)
-            
-            if method === :takipi
-                @text = load_lemated_text(text)
-            elsif method === :morfeusz
-                @text = lematize_text(text)
-            else
-                @text = text
-            end
-            
+        def initialize(text)
+            @text = text
             @pos = 0
             @tokens = flatten_text(@text)
         end
@@ -43,6 +31,7 @@ module NLP
             end
         end
 
+
         def current
             
             if @pos == @tokens.size
@@ -53,9 +42,11 @@ module NLP
 
         end
 
+
         def index
             @pos
         end
+
 
         def end?
             @pos == tokens.size
@@ -70,67 +61,5 @@ module NLP
             flattened
         end
 
-        #Tok
-        
-       def load_lemated_text(text)
-
-            t1 = Thread.new do 
-                `echo #{text} | takipi -i  -o output.xml -it TXT`
-            end
-            t1.join
-
-           text = []
-           File.open("output.xml") do |f|
-               doc = Document.new(f)
-
-               doc.elements.each("*/chunkList/chunk") do |chunk| 
-                    sentence = Sentence.new
-                    tokens = []
-
-                    chunk.elements.each("tok") do |tok|
-                       word = tok.elements[1].text
-                       lemat, inflect = ""
-
-                       tok.elements.each("lex") do |lex|
-                            if lex.has_attributes?
-                                lemat = lex.elements[1].text
-                                inflect = lex.elements[2].text
-                            end
-                       end
-                      
-                       tokens << Word.new(word,lemat,inflect)
-                   end
-
-                    sentence << tokens
-                    text << sentence
-            end
-        end
-        text
-        end 
-
-       def lematize_text(text)
-            temp_text = []
-           text.split(/\.|!|\?/).each do |s|
-                sentence = Sentence.new
-                sentence << s.split(" ").collect{ |t|
-                    if word = Morfeusz::Lexeme.find(t)
-                       if word[0]
-                            Word.new(t,word[0].base_form,"") 
-                       else
-                            Word.new(t,"","")
-                       end
-                    else
-                        Word.new(t,"","")
-                    end
-                }
-                temp_text.push  sentence
-           end
-           temp_text
-       end
-
-
-
-
-    end
-
+end
 end
