@@ -28,18 +28,25 @@ module NLP
                 while @pos < @tokens.size and !@tokens[@pos].number?
                     @pos+= 1
                 end
+             when :alphanum
+                while @pos < @tokens.size and !@tokens[@pos].number? and !@tokens[@pos].word?
+                    @pos+= 1
+                end
             end
         end
 
 
-        def current
-            
+        def current 
             if @pos == @tokens.size
                 nil
             else
                 @tokens[@pos]
             end
 
+        end
+
+        def rewind
+            @pos = 0
         end
 
 
@@ -57,7 +64,7 @@ module NLP
 
         def flatten_text(text)
             flattened = []
-            text.each { |s| s.tokens.each {|t| flattened.push t } }
+            text.sentences.each { |s| s.tokens.each {|t| flattened.push t } }
             flattened
         end
 

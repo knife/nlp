@@ -77,7 +77,7 @@ class Lemmatizer
 
     def self.parse_lematized_xml(doc)
         
-        text = []
+        text = Text.new
 
         doc.elements.each("*/chunkList/chunk") do |chunk| 
             sentence = Sentence.new

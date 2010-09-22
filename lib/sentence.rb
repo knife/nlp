@@ -8,5 +8,9 @@ module NLP
         def << tokens
             @tokens.concat tokens
         end
+
+        def words_number
+            @tokens.size
+        end
     end
 end

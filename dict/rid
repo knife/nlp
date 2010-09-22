@@ -159,7 +159,7 @@ PIERWOTNE
 			sherry
 			skubać
 			ślina
-			ślinić się
+			ślinić
 			Smacznego
 			smoczek
 			śniadanie
@@ -168,7 +168,7 @@ PIERWOTNE
 			sos
 			spożywać
 			spragniony
-			środek spożywcze
+			spożywczy
 			ssać
 			strawić
 			surowo
@@ -231,10 +231,10 @@ PIERWOTNE
 			bźdić
 			bździna
 			cuchnący
-			cztery litery
 			defakacja
 			dupa
-			dupek dupsko enema
+			dupek 
+			dupsko
 			fetor
 			gazy
 			gnić
@@ -245,7 +245,6 @@ PIERWOTNE
 			gnojownia
 			gówno
 			jelito
-			kał
 			kał
 			kanalizacja
 			kloaka
@@ -262,14 +261,12 @@ PIERWOTNE
 			nieczystość
 			nieczystości
 			nieczysty
-			nieczysty
 			nieumyty
 			niporządek
 			obleśny
 			obornik
 			obrzydzenie
 			obstrukcja
-			odbyt
 			odbyt
 			odbytnica
 			odchody
@@ -283,7 +280,7 @@ PIERWOTNE
 			pośladek
 			pot
 			przeczyszczenie
-			psuć się
+			psuć
 			pupa
 			robaczywy
 			rozkładający się
@@ -333,7 +330,6 @@ PIERWOTNE
 			amant
 			amorek
 			bezwstydny
-			bezwstydny
 			burdel
 			chuć
 			ciąża
@@ -342,8 +338,7 @@ PIERWOTNE
 			cudzołóstwo
 			cudzołożnik
 			cudzołożyć
-			czulić się
-			dom publiczny
+			czulić
 			dziwka
 			ejakulat
 			erotyczny
@@ -385,7 +380,7 @@ PIERWOTNE
 			menstruacja
 			menstruacyjny
 			nagi
-			na golasa
+			golas
 			namiętność
 			nędzić
 			niedyskretny
@@ -540,7 +535,7 @@ PIERWOTNE
 			stęchły
 			wąchać
 			wdychać
-			woda kolońska
+			kolońska
 			woń
 			wonność
 			zapach
@@ -606,12 +601,10 @@ PIERWOTNE
 			głuchy
 			grzechotać
 			grzmot
-			grzmot
 			gwizd
 			hałas
 			hałaśliwy
 			harmier
-			huk
 			huk
 			jazgot
 			klekot
@@ -671,7 +664,7 @@ PIERWOTNE
 			wrzawa
 			wrzeszczeć
 			wycie
-			wydzierać się
+			wydzierać
 			zgrzyt
 		WZROK
 			aureola
@@ -697,7 +690,7 @@ PIERWOTNE
 			fluorescencyjny
 			gwiazda
 			jasny
-			jawić się
+			jawić
 			jednooczny
 			jutrzenka
 			kamerować
@@ -732,7 +725,7 @@ PIERWOTNE
 			oświetlić
 			patrzyć
 			pogląd
-			pojawić się
+			pojawić
 			półprzejrzysty
 			połysk
 			połyskliwy
@@ -752,7 +745,6 @@ PIERWOTNE
 			rozpromieniony
 			rubinowy
 			rumiany
-			rzucić okiem
 			scena
 			sceniczny
 			skanować
@@ -782,11 +774,10 @@ PIERWOTNE
 			zabarwienie
 			zdjęcie
 			zerknąć
-			zerknąć
 			zielony
 			zobaczyć
 			żółty
-			zorza polarna
+			zorza
 		ZIMNO
 			Alaska
 			arktyczny
@@ -810,7 +801,6 @@ PIERWOTNE
 			północ
 			północny
 			schładzać
-			skuwać lodem
 			śnieg
 			śnieżny
 			studzić
@@ -946,7 +936,6 @@ PIERWOTNE
 			schnąć
 			śmierć
 			spokój
-			spokojny
 			spokojny	
 			stagnacja
 			statyczny
@@ -958,7 +947,7 @@ PIERWOTNE
 			uspokoić
 			uspokojenie
 			usypiać
-			wałkonić się
+			wałkonić
 			wypoczynek
 			zadowolenie
 			zadowolony
@@ -977,10 +966,10 @@ PIERWOTNE
 			aktywności
 			badać
 			badacz
-			błąkać się
+			błąkać
 			brnąć
 			chwiać
-			chwiać się
+			chwiać
 			chybotać
 			czynności
 			drżeć
@@ -1011,7 +1000,7 @@ PIERWOTNE
 			migrować
 			nawigować
 			obracać
-			obracać się
+			obracać
 			odległy
 			odludzie
 			okrążać
@@ -1028,7 +1017,7 @@ PIERWOTNE
 			potrząsać
 			przejażdżka
 			przenosić się
-		PRZYPADKOWE RUCHY
+		PRZYPADKOWE_RUCHY
 			puchnąć
 			pulsować
 			pustynia
@@ -1054,7 +1043,7 @@ PIERWOTNE
 			wiercić
 			wirować
 			włóczęga
-			włóczyć się
+			włóczyć
 			wrzeć
 			wstrząsać
 			wycieczka
@@ -1066,7 +1055,7 @@ PIERWOTNE
 			zachwiać
 			zakręcać
 			zamieszać
-			zaokrętować się
+			zaokrętować
 			zataczać
 			zatrząść
 			żeglarz
@@ -1192,7 +1181,6 @@ PIERWOTNE
 			bezustanny
 			ciągły
 			eon
-			na zawsze
 			nieskończony
 			nieśmiertelny
 			nieustanny
@@ -1234,7 +1222,6 @@ PIERWOTNE
 			gorączka
 			gorączkowy
 			granica
-			hall
 			halucynacje
 			haszysz
 			hibernacja
@@ -1348,11 +1335,10 @@ PIERWOTNE
 			wariactwo
 			wariat
 			wejście
-			we śnie
 			wiadukt
 			wizjoner
 			wybrzeże
-			wyobrażać sobie
+			wyobrażać
 			wyobraźnia
 			wyrocznia
 			zaczarować
@@ -1360,7 +1346,6 @@ PIERWOTNE
 			zahipnotyzowany
 			zamyślenie
 			zauroczony
-			zawrót głowy
 			zwariowany
 		NARCYZM
 			bark
@@ -1419,13 +1404,11 @@ PIERWOTNE
 			gdzieś
 			koniuszek
 			krzywa
-			ku
 			kwadrat
 			kwadratowy
 			łuk
 			między
 			miejsce
-			na bok
 			naprzeciw
 			naprzód
 			obok
@@ -1488,12 +1471,11 @@ PIERWOTNE
 			wzdłuż
 			za
 			zachód
-			z dala
 			zewnątrz
 			zewnętrzny
 	IKARIAN
 		WSPINANIE
-			bujać się
+			bujać
 			dyndać
 			góra
 			ikaryjski
@@ -1504,10 +1486,9 @@ PIERWOTNE
 			lot
 			lotnik
 			lotu
-			odbijać się
+			odbijać
 			pływak
 			podnosić
-			podnosić się
 			podrzucać
 			podskakiwać	
 			powiesić
@@ -1523,12 +1504,9 @@ PIERWOTNE
 			świt
 			trzepotać
 			trzepotanie
-			unosić się w powietrzu
-			w górę
-			w górze
 			wschodzić
-			wspiąć się
-			wznieść się
+			wspiąć
+			wznieść
 			wzrastać
 			wzrost
 			zbocze
@@ -1550,8 +1528,7 @@ PIERWOTNE
 			kopiec
 			krokiew
 			mur
-			nad głową
-			na górze
+			nad
 			niebo
 			obelisk
 			piramida
@@ -1588,12 +1565,12 @@ PIERWOTNE
 			zenit
 		POCHODZENIE
 			baza
-			chylić się
+			chylić
 			kopać
 			nora
 			nurkować
 			obalać
-			obniżyć się
+			obniżyć
 			opadać
 			pikować
 			pochodzenie
@@ -1618,11 +1595,10 @@ PIERWOTNE
 			upadły
 			ustępować
 			więdnąć
-			zachód słońca
 			zatapiać
 			zawalić
 			zjazd
-			zniżać się
+			zniżać
 		GŁĘBOKOŚĆ
 			dno
 			dół
@@ -1647,7 +1623,6 @@ PIERWOTNE
 			spadzisty
 			szczelina
 			tunel
-			w dół
 			żleb
 		OGIEŃ
 			ciepło
@@ -1684,12 +1659,11 @@ PIERWOTNE
 			stopić
 			świeca
 			świeczka
-			tlić się
+			tlić
 			tropikalny
 			tropiki
 			udar
 			węgiel
-			w ogniu
 			wybuch
 			wybuchnąć
 			wzniecać
@@ -1712,7 +1686,7 @@ PIERWOTNE
 			jezioro
 			kapać
 			kąpiel
-			lać się
+			lać
 			mech
 			moczyć
 			mokro
@@ -1795,7 +1769,7 @@ WTORNE
 		determiować
 		dlaczego
 		doktryna
-		domyślać się
+		domyślać
 		dowieść
 		dowód
 		dowodzić
@@ -1863,7 +1837,6 @@ WTORNE
 		powodować
 		poza tym
 		prawda
-		prawdobodobne
 		prawdobodobny
 		prawdziwy
 		prawie
@@ -1897,7 +1870,7 @@ WTORNE
 		sądzić
 		schemat
 		selekcjonować
-		skłaniać się
+		skłaniać
 		skupiać
 		sprawdzać
 		stwierdzać
@@ -1905,7 +1878,7 @@ WTORNE
 		temat
 		teoretycznie
 		teoria
-		uczyć się
+		uczyć
 		udowadniać
 		uogólniać
 		urozmaicenie
@@ -1921,16 +1894,15 @@ WTORNE
 		właściwość
 		wnioskować
 		wszechstronny
-		wyballać
 		wybierać
 		wybór
 		wyrazisty
 		wyraźny
 		wywoływać
 		wyznaczać
-		zaliczać się
+		zaliczać
 		zamiar
-		zastanawiać się
+		zastanawiać
 		zdecydować
 		zgadywać
 		zmierzać
@@ -2068,8 +2040,8 @@ WTORNE
 		świadczyć
 		sygnał
 		szczodry
-		targować się
-		tłumaczyć się
+		targować
+		tłumaczyć
 		towarzyski
 		towarzyszyć
 		traktować
@@ -2081,7 +2053,7 @@ WTORNE
 		ułaskawiać
 		umowa
 		umożliwić
-		upewniać się
+		upewniać
 		uratować
 		uwaga
 		uzgodnić
@@ -2117,10 +2089,10 @@ WTORNE
 		zatwierdzić
 		zdolny
 		zezwolenie
-		zgadzać się
+		zgadzać
 		zgoda
 		zobowiązanie
-		zwierzać się
+		zwierzać
 	ZACHOWANIE_INSTRUMENTALNE
 		aplikacja
 		architekt
@@ -2195,7 +2167,7 @@ WTORNE
 		pochłaniać
 		poprawiać
 		posiadać
-		pozbywać się
+		pozbywać
 		pożytek
 		praca
 		pracochłonny
@@ -2322,7 +2294,7 @@ WTORNE
 		odmówić
 		ogradzać
 		ograniczać
-		opierać się
+		opierać
 		opór
 		oprócz
 		penitencjarny
@@ -2465,12 +2437,10 @@ WTORNE
 		długookresowy
 		długoterminowy
 		długowieczność
-		do
 		dzisiaj
 		efemeryczny
 		godzina
 		ilekroć
-		jeszcze raz
 		już
 		kiedy
 		kiedykolwiek
@@ -2482,7 +2452,6 @@ WTORNE
 		minuta
 		moment
 		nagły
-		na pół etatu
 		następnie
 		natychmiast
 		natychmiastowy
@@ -2521,8 +2490,8 @@ WTORNE
 		cenić
 		cnota
 		dostosować
+		godny
 		etyczny
-		godny zaufania
 		honor
 		honorowy
 		klient
@@ -2569,13 +2538,11 @@ WTORNE
 EMOCJE
 	POZYTYWNY_AFEKT
 		bawić
-		bawić się
 		beztroski
 		beztrosko
 		celebracja
 		chichotać
 		cieszyć
-		cieszyć się
 		dowcip
 		dreszczyk
 		ekscytować
@@ -2664,10 +2631,10 @@ EMOCJE
 		horror
 		kłopot
 		kryzys
-		kulić się
+		kulić
 		lęk
 		lękliwy
-		martwić się
+		martwić
 		męczarnia
 		męka
 		nerwowy
@@ -2681,7 +2648,7 @@ EMOCJE
 		poddenerwować
 		poruszony
 		przejęcie
-		przejmować się
+		przejmować
 		przerażać
 		przerażający
 		przerażenie
@@ -2705,7 +2672,7 @@ EMOCJE
 		uraz
 		wrzask
 		zaczerwienić
-		zarumienić się
+		zarumienić
 		zdenerwowanie
 		zdenerwowany
 		zgroza
@@ -2754,7 +2721,7 @@ EMOCJE
 		samotność
 		samotny
 		sierota
-		skarżyć się
+		skarżyć
 		skruszony
 		smutek
 		szloch
@@ -2789,7 +2756,6 @@ EMOCJE
 		czułość
 		czuły
 		doceniać
-		do widzenia
 		drogi
 		flirt
 		hołubić
@@ -2811,7 +2777,6 @@ EMOCJE
 		obejmować
 		objęcie
 		ożenić
-		panna młoda
 		pogłaskać
 		poklepywać
 		poświęcać
@@ -2822,7 +2787,7 @@ EMOCJE
 		przyjaciel
 		przyjaźń
 		przyjaźnić
-		przymilać się
+		przymilać
 		romans
 		rozkochać
 		serdeczny
@@ -2841,13 +2806,12 @@ EMOCJE
 		wdzięczny
 		weselny
 		witać
-		wyjśc za mąż
 		zakochać
-		zalecać się
+		zalecać
 		zaloty
 		zamężna
 		zamiłowanie
-		zaprzyjaźnić się
+		zaprzyjaźnić
 		zażyłość
 		znajomy
 		żonaty
@@ -2899,7 +2863,7 @@ EMOCJE
 		irytować
 		karcić
 		klaps
-		kłócić sie
+		kłócić
 		kłótnia
 		konflikt
 		kontrowersja
@@ -2917,7 +2881,7 @@ EMOCJE
 		maltretowanie
 		męka
 		miecz
-		mocować się
+		mocować
 		morderstwo
 		mścić
 		mściwy
@@ -2937,9 +2901,7 @@ EMOCJE
 		nieugięty
 		niewdzięczność
 		niezadowolenie
-		nie zgadzać się
 		niezgoda
-		nie znosić
 		niszczyć
 		nóż
 		obelżywy
@@ -2950,7 +2912,8 @@ EMOCJE
 		odwet
 		okaleczyć
 		okłamać
-		okraść okrutny
+		okraść
+		okrutny
 		oporny
 		oskarżać
 		oszczerstwo
@@ -2989,14 +2952,14 @@ EMOCJE
 		sarkastyczny
 		sarkazm
 		skalp
-		skarżyć się
+		skarżyć
 		skradziony
 		skrzyczeć
 		spór
 		sprofanować
-		sprzeciwiać się
+		sprzeciwiać
 		sprzeczać
-		sprzeczać się
+		sprzeczać
 		srogi		
 		strzał
 		strzała
@@ -3042,7 +3005,7 @@ EMOCJE
 		wrogość
 		wściekły
 		wykorzystać
-		wyśmiewanie się
+		wyśmiewanie
 		zabić
 		zabijać
 		zabity
@@ -3074,7 +3037,7 @@ EMOCJE
 		zmagać
 		zmiażdżyć
 		zmora
-		znęcać się
+		znęcać
 		znęcanie
 		zniecierpliwienie
 		znieważać
@@ -3142,7 +3105,7 @@ EMOCJE
 		chełpliwy
 		chwała
 		chwalić
-		chwalić się
+		chwalić
 		cudowny
 		duma
 		dumny
@@ -3172,7 +3135,7 @@ EMOCJE
 		podziwiać
 		pogarda
 		prestiż
-		przechwalać się
+		przechwalać
 		przepych
 		przyklaskiwać
 		pycha
@@ -3184,7 +3147,7 @@ EMOCJE
 		śmietanka
 		splendor
 		świetny
-		szczycić się
+		szczycić
 		szlachetny
 		triumf
 		tron

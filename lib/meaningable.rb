@@ -1,44 +1,65 @@
 module Meaningable
 
+ 
+
 #LIWC
-	def positive_emotion?
+    #primary categories
+      
+       def linguistic?
+          category.root == :PIERWOTNE
+        end
+        
+        def psychological?
+          category.root == :PROCESY_PSYCHOLOGICZNE
+        end
 
-	end
+        
+        def relative?
+            category.root === :RELATYWNOSC
+        end
+        
+        def personal?
+          category.root == :OSOBISTE
+        end
 
-	def negative_emotion?
-			
-	end
+        #second categories
+        
+        def emotion?
+            category.path.include? 'EMOCJE'
 
-	def emotion?
+        end
 
-	end
+        def positive_emotion?
+             category.path.include? 'POZYTYWNE_EMOCJE'
+           
+        end
 
-	def cognitive?
-	end
+        def negative_emotion?
+            category.path.include? 'NEGATYWNE_EMOCJE'
 
-	def social?
-			
-	end
-	
-#EXPERIMENTAl
+        end
 
-	def bad_word?
+        def cognitive?
+            category.path.include? 'KOGNITYWNE_PROCESY'
 
-	end
+        end
+
+        def sense?
+            category.path.include? 'ZMYSLY'
+        end
+
+        def social?
+            category.path.include? 'SOCIAL'
+
+        end
+
+        def bad_word?
+            category.path.include? 'WULGAR'
+        end
 
 
-	def emoticon?
-
-	end
 
 
-	def filler?
-
-	end
-
-	def nonfluent?
-	
-	end
 
 #SEMANTIC
 	def synonym?(other)

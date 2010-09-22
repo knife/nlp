@@ -7,6 +7,7 @@ module NLP
         include Meaningable
 
         attr_reader :lemat, :orth
+        attr_accessor :category
         
         def initialize(word, lemat, tags)
             super(word,tags)
@@ -16,6 +17,7 @@ module NLP
         def inflection
             @tags
         end
+
 
     end
 end

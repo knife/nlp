@@ -2,10 +2,10 @@
 require 'stree'
 require 'category'
 require 'rid_category'
+require 'liwc_category'
 
 module NLP
   class Dictionary
-   CACHE_DIR = '~/.rima'
     def initialize
       @tree = SearchTree.new
       @categories = {}
@@ -35,7 +35,7 @@ module NLP
     end
     
 
-    def load_categories( category_file )
+    def load_categories( category_file,options )
       category = nil
       primary = nil
       secondary = nil
@@ -47,13 +47,27 @@ module NLP
           begin
             lead, rest = line.scan( /(\t*)(.*)/ ).first
             if lead.size == 0
+		    if options[:rid]
               category = primary = RIDCategory.new( rest )
+		    else
+              category = primary = LIWCCategory.new( rest )
+		    end
+
               secondary, tertiary = nil
             elsif lead.size == 1
+		    if options[:rid]
               category = secondary = RIDCategory.new( rest, primary )
+		    else
+			    category = secondary = LIWCCategory.new(rest,primary)
+		    end
               tertiary = nil
-            elsif lead.size == 2 && ( cat = line.strip.index(/^[A-ZĄŚĘĆŃŹŻŁÓ]+$/)) && cat >= 0 
+            elsif lead.size == 2 && ( cat = line.strip.index(/^[A-ZĄŚĘĆŃŹŻŁÓ_]+$/)) && cat >= 0 
+		    if options[:rid]
+
               category = tertiary = RIDCategory.new( rest, secondary )
+		    else
+              category = tertiary = LIWCCategory.new( rest, secondary )
+		    end
             else
               word = rest.downcase.gsub( /\s*\(1\)$/, '' )
               @tree.insert( word, category )

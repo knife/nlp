@@ -1,7 +1,7 @@
 class String
     alias old_memeber []
 
-    def ord (index)
+    def ordinary (index)
         self.old_memeber index
     end
 
