@@ -2,22 +2,22 @@ require 'inflectable'
 require 'meaningable'
 
 module NLP
-    class Word < Token
-        include Inflectable
-        include Meaningable
+  class Word < Token
+    
+    include Inflectable
+    include Meaningable
 
-        attr_reader :lemat, :orth
-        attr_accessor :category
-        
-        def initialize(word, lemat, tags)
-            super(word,tags)
-            @lemat = lemat
-        end
+    attr_reader :lemat
+    attr_accessor :category
 
-        def inflection
-            @tags
-        end
-
-
+    def initialize(word, lemat, tags)
+      super(word,tags)
+      @lemat = lemat
     end
+
+    def inflection
+      @tags
+    end
+
+  end
 end
