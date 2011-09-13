@@ -10,11 +10,9 @@ module NLP
       @sentences.push sentence
     end
 
-
     def words_per_sentence
       @sentences.collect{|s| s.words_number}.mean
     end
-
 
     def flatten
       flattened = []

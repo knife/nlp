@@ -1,5 +1,4 @@
 module NLP
-
   class LIWCCategory < Category
 
     #primary categories
@@ -25,22 +24,18 @@ module NLP
 
     def emotion?
       path.include? 'EMOCJE'
-
     end
 
     def positive_emotion?
       path.include? 'POZYTYWNE_EMOCJE'
-
     end
 
     def negative_emotion?
       path.include? 'NEGATYWNE_EMOCJE'
-
     end
 
     def cognitive?
       path.include? 'KOGNITYWNE_PROCESY'
-
     end
 
     def sense?
@@ -49,13 +44,11 @@ module NLP
 
     def social?
       path.include? 'SOCIAL'
-
     end
 
     def bad_word?
       path.include? 'WULGAR'
     end
-
 
   end
 end

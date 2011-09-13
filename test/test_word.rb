@@ -1,8 +1,6 @@
 require 'helper'
-require '../lib/word.rb'
 
 class WordTest < Test::Unit::TestCase
-  include NLP
 
   def setup 
     @word_kota = Word.new('kota','kot','subst:sg:gen.acc:m2')

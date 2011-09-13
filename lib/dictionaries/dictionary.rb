@@ -1,23 +1,15 @@
-
-require 'stree'
-require 'category'
-require 'rid_category'
-require 'liwc_category'
-
 module NLP
-
   class Dictionary
+    
     attr_accessor :tree
-
 
     def initialize(category_file=:rid,restore = true)
       state_file = File.expand_path(DICTIONARY_CACHE_DIR+".#{category_file.to_s}")
       if restore and File.exist?(state_file)
-        d = Dictionary.restore(state_file) 
-        @tree = d.tree
+        @tree = Dictionary.restore(state_file) 
       else
-        @tree = SearchTree.new
-        load_categories(File.dirname(__FILE__)+"/../dict/#{category_file.to_s}", category_file )
+        @tree = PlTrie.new
+        load_categories(File.dirname(__FILE__)+"/../../dict/#{category_file.to_s}", category_file )
         store(state_file)
       end
 
@@ -25,7 +17,7 @@ module NLP
 
     def store( state_file )
       File.open( File.expand_path( state_file ), "w" ) do |file|
-        Marshal.dump( self, file )
+        Marshal.dump( self.tree, file )
       end
       self
     end
@@ -37,13 +29,8 @@ module NLP
     end
 
     def find(word)
-      if @exception_pattern && @exception_pattern =~ word
-        nil
-      else
         @tree.find(word)
-      end
     end
-
 
     def load_categories(category_file,type)
       category = nil
@@ -57,22 +44,22 @@ module NLP
         cat_class = NLP.const_get("LIWCCategory")
       end
 
-      File.open( category_file ) do |file|
+      File.open(category_file) do |file|
         while line = file.gets
           line.chomp!
           begin
-            lead, rest = line.scan( /(\t*)(.*)/ ).first
+            lead, rest = line.scan(/(\t*)(.*)/).first
             if lead.size == 0
               category = primary = cat_class.new(rest)
               secondary, tertiary = nil
             elsif lead.size == 1
-              category = secondary = cat_class.new(rest, primary )
+              category = secondary = cat_class.new(rest, primary)
               tertiary = nil
             elsif lead.size == 2 && ( cat = line.strip.index(/^[A-ZĄŚĘĆŃŹŻŁÓ_]+$/)) && cat >= 0 
               category = tertiary = cat_class.new( rest, secondary )
             else
               word = rest.downcase.gsub( /\s*\(1\)$/, '' )
-              @tree.insert( word, category )
+              @tree.insert(word, category)
             end
           rescue
             raise

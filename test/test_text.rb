@@ -1,9 +1,7 @@
 require 'helper'
-require '../lib/token.rb'
 
 class TextTest < Test::Unit::TestCase
 
-  include NLP
 
   def setup 
     @s1 = Sentence.new
@@ -15,15 +13,19 @@ class TextTest < Test::Unit::TestCase
     @s1 << @integer << @comma << @symbol
     @s2 << @integer << @symbol
     @text = Text.new
-
+    @text << @s1
+    @text << @s2
   end
 
 
   def test_text
-    @text << @s1 
-    @text << @s2
     assert_equal 2, @text.words_per_sentence
   end
 
-    
+  def test_flatten
+    tokens = @text.flatten
+    assert_kind_of Array, tokens
+    assert_equal  5, tokens.size
+  end
+
 end

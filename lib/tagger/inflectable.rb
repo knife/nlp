@@ -56,5 +56,4 @@ module Inflectable
     }
   end
 
-
 end

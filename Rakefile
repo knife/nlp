@@ -11,6 +11,8 @@ begin
     gem.homepage = "http://github.com/knife/nlp"
     gem.authors = ["knife"]
     gem.files = Dir["lib/*"] + Dir["lib/stdlib/ext/*"] + Dir["dict/*"]
+    gem.add_dependency 'savon', '= 0.7.9'
+    gem.add_dependency 'ds'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

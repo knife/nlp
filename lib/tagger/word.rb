@@ -1,6 +1,3 @@
-require 'inflectable'
-require 'meaningable'
-
 module NLP
   class Word < Token
     

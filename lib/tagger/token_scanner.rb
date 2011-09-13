@@ -34,7 +34,6 @@ module NLP
       end
     end
 
-
     def current 
       if @pos == @tokens.size
         nil
@@ -54,7 +53,6 @@ module NLP
     def end?
       @pos == tokens.size
     end
-
     
   end
 end

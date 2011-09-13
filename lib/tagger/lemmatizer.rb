@@ -1,6 +1,4 @@
-require 'takipi_web_service'
 require 'rexml/document'
-require 'morfeusz'
 
 module NLP
   class Lemmatizer

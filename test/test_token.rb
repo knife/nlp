@@ -1,9 +1,6 @@
 require 'helper'
-require '../lib/token.rb'
 
 class TokenTest < Test::Unit::TestCase
-
-  include NLP
 
   def setup 
     @comma = Token.new(',','interp')
@@ -11,7 +8,6 @@ class TokenTest < Test::Unit::TestCase
     @float = Token.new('3,12','tnum:frac')
     @symbol = Token.new('nie_istniejace_slowo','tsym')
   end
-
 
   def test_recognizing_interpunction
     assert @comma.interp?
@@ -32,6 +28,4 @@ class TokenTest < Test::Unit::TestCase
   def test_symbol
     assert @symbol.symbol?
   end
-    
-    
 end

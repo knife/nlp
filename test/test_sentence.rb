@@ -1,5 +1,4 @@
 require 'helper'
-require '../lib/token.rb'
 
 class SentenceTest < Test::Unit::TestCase
 

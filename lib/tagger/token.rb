@@ -18,7 +18,7 @@ module NLP
     end
 
     def word?
-      not interp? and not number?
+      not interp? and not number? and not agl?
     end
 
     def number?
@@ -31,6 +31,14 @@ module NLP
 
     def float?
       @tags.include?("tnum:frac")
+    end
+
+    def qublic?
+      @tags.include?("qub")
+    end
+
+    def agl?
+      @tags.include?("agl")
     end
 
   end

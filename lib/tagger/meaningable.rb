@@ -24,22 +24,18 @@ module Meaningable
 
   def emotion?
     category.path.include? 'EMOCJE'
-
   end
 
   def positive_emotion?
     category.path.include? 'POZYTYWNE_EMOCJE'
-
   end
 
   def negative_emotion?
     category.path.include? 'NEGATYWNE_EMOCJE'
-
   end
 
   def cognitive?
     category.path.include? 'KOGNITYWNE_PROCESY'
-
   end
 
   def sense?
@@ -48,7 +44,6 @@ module Meaningable
 
   def social?
     category.path.include? 'SOCIAL'
-
   end
 
   def bad_word?
@@ -64,6 +59,5 @@ module Meaningable
   def synonyms
 
   end
-
 
 end
