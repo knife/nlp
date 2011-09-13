@@ -10,7 +10,8 @@ begin
     gem.email = "satre@o2.pl"
     gem.homepage = "http://github.com/knife/nlp"
     gem.authors = ["knife"]
-    gem.files = Dir["lib/*"] + Dir["lib/stdlib/ext/*"] + Dir["dict/*"]
+    gem.files = Dir["lib/*"] + Dir["lib/stdlib/ext/*"] + Dir["dict/*"]+Dir["lib/tagger/*"] +  Dir["lib/dictionaries/*"]+ Dir["lib/analizators/*"]
+
     gem.add_dependency 'savon', '= 0.7.9'
     gem.add_dependency 'ds'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
