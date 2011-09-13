@@ -28,20 +28,6 @@ class LemmatizerTest < Test::Unit::TestCase
   end
 
 
-  def test_morfeusz_leamtizer
-    text = Lemmatizer.lemmatize(@sample)
-    assert_equal Text, text.class
-    assert_equal 1, text.sentences.size
-    assert_equal 4, text.sentences[0].words_number
-    
-    tokens = text.sentences[0].tokens
-    zle,czasy,juz,minely,period = *tokens
-    assert_equal 'zły', zle.lemat
-    assert_equal 'czas', czasy.lemat
-    assert_equal 'już', juz.lemat
-    assert_equal 'minąć', minely.lemat
-  end
-
 private
   def test_takipi_lemmatizer(text)
     assert_equal Text, text.class

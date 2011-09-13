@@ -20,7 +20,9 @@ module NLP
 
       #Default lematization method is  Morfeusz 
       else 
-        morfeusz_lemmatize(str)
+        takipi_lemmatize(str,:remote)
+
+        #morfeusz_lemmatize(str)
       end
     end
 
@@ -58,21 +60,21 @@ module NLP
       #simple tagger
       #TODO lemmatizer should take TokenScanner object that defines
       #how split string
-      text.split(/\.|!|\?/).each do |s|
-        sentence = Sentence.new
-        sentence << s.split(" ").collect{ |t|
-          if word = Morfeusz::Lexeme.find(t)
-            if word[0]
-              Word.new(t,word[0].base_form,"") 
-            else
-              Word.new(t,"","")
-            end
-          else
-            Word.new(t,"","")
-          end
-        }
-        temp_text <<  sentence
-      end
+      # text.split(/\.|!|\?/).each do |s|
+      #   sentence = Sentence.new
+      #   sentence << s.split(" ").collect{ |t|
+      #     if word = Morfeusz::Lexeme.find(t)
+      #       if word[0]
+      #         Word.new(t,word[0].base_form,"") 
+      #       else
+      #         Word.new(t,"","")
+      #       end
+      #     else
+      #       Word.new(t,"","")
+      #     end
+      #   }
+      #   temp_text <<  sentence
+      # end
       temp_text
     end
 

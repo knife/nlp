@@ -5,7 +5,6 @@ end
 
 
 require 'stdlib/ext/array'
-require 'morfeusz'
 
 require "analizators/analyzer"
 require "analizators/rid_analyzer.rb"
