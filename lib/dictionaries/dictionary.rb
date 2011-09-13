@@ -29,7 +29,11 @@ module NLP
     end
 
     def find(word)
+      begin 
         @tree.find(word)
+      rescue
+        nil
+      end
     end
 
     def load_categories(category_file,type)
