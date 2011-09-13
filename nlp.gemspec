@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{nlp}
-  s.version = "0.2.7"
+  s.version = "0.2.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["knife"]
@@ -19,9 +19,26 @@ Gem::Specification.new do |s|
   s.files = [
     "dict/liwc",
     "dict/rid",
-    "lib/morfeusz.rb",
+    "lib/analizators/analyzer.rb",
+    "lib/analizators/liwc_analyzer.rb",
+    "lib/analizators/rid_analyzer.rb",
+    "lib/dictionaries/category.rb",
+    "lib/dictionaries/dictionary.rb",
+    "lib/dictionaries/liwc_category.rb",
+    "lib/dictionaries/pl_trie.rb",
+    "lib/dictionaries/rid_category.rb",
     "lib/nlp.rb",
     "lib/stdlib/ext/array.rb",
+    "lib/tagger/emoticon.rb",
+    "lib/tagger/inflectable.rb",
+    "lib/tagger/lemmatizer.rb",
+    "lib/tagger/meaningable.rb",
+    "lib/tagger/sentence.rb",
+    "lib/tagger/takipi_web_service.rb",
+    "lib/tagger/text.rb",
+    "lib/tagger/token.rb",
+    "lib/tagger/token_scanner.rb",
+    "lib/tagger/word.rb",
     "lib/text_statistics.rb"
   ]
   s.homepage = %q{http://github.com/knife/nlp}
